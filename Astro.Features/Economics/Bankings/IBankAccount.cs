@@ -1,6 +1,8 @@
-﻿namespace Astro.Features.Economics.Bankings
+﻿using System.ComponentModel;
+
+namespace Astro.Features.Economics.Bankings
 {
-    public interface IBankAccount
+    public interface IBankAccount : INotifyPropertyChanged
     {
         decimal Balance { get; }
 

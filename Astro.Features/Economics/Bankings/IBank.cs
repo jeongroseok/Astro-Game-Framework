@@ -1,6 +1,6 @@
 ﻿namespace Astro.Features.Economics.Bankings
 {
-    interface IBank
+    public interface IBank
     {
     }
 }

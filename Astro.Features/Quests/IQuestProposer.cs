@@ -2,8 +2,8 @@
 
 namespace Astro.Features.Quests
 {
-    public interface IQuestProposer : IEnumerable<IQuestProposal>
+    public interface IQuestProposer
     {
-
+        IEnumerable<IQuestProposal> Proposals { get; }
     }
 }
