@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astro.Features", "Astro.Fea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astro.Networking", "Astro.Networking\Astro.Networking.csproj", "{3EE7DF6F-4E1B-49D9-B4D7-3D713866B03C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astro", "Astro.Core\Astro.csproj", "{0DD85D1A-9B79-4E97-ACF3-64DC75E561F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astro.UI", "Astro.UI\Astro.UI.csproj", "{537E95A3-777A-4692-824C-D90771305F8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{3EE7DF6F-4E1B-49D9-B4D7-3D713866B03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EE7DF6F-4E1B-49D9-B4D7-3D713866B03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EE7DF6F-4E1B-49D9-B4D7-3D713866B03C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD85D1A-9B79-4E97-ACF3-64DC75E561F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD85D1A-9B79-4E97-ACF3-64DC75E561F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD85D1A-9B79-4E97-ACF3-64DC75E561F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD85D1A-9B79-4E97-ACF3-64DC75E561F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537E95A3-777A-4692-824C-D90771305F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537E95A3-777A-4692-824C-D90771305F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537E95A3-777A-4692-824C-D90771305F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537E95A3-777A-4692-824C-D90771305F8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

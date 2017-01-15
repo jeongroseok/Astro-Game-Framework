@@ -44,12 +44,11 @@
     <Compile Include="Messaging\NetworkMessage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Astro.Features\Astro.Features.csproj">
-      <Project>{a9dfabad-3202-4189-96c9-00824da1e034}</Project>
-      <Name>Astro.Features</Name>
+    <ProjectReference Include="..\Astro.Core\Astro.csproj">
+      <Project>{0dd85d1a-9b79-4e97-acf3-64dc75e561f3}</Project>
+      <Name>Astro</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

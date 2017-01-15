@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Astro.Features.Quests
 {
-    public interface IQuest
+    public interface IQuest : INotifyPropertyChanged
     {
-        event EventHandler Accomplished;
+        IEnumerable<IQuestObjective> Objectives { get; }
+        bool CanProvide { get; }
 
-        IRewardDescriptor RewardDescription { get; }
-        IEnumerable<IRequirement> Requirements { get; }
-        IRewardProvider RewardProvider { get; }
+        bool ProvideReward();
     }
 }

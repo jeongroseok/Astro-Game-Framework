@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Astro.Features.Quests
 {
-    public interface IQuestPerformer
-	{
-        event EventHandler Accepted;
+    public interface IQuestPerformer<TQuest, TQuestDescriptor>
+        where TQuest : IQuest
+        where TQuestDescriptor : IQuestDescriptor
+    {
+        IEnumerable<TQuestDescriptor> InProgress { get; }
+        IEnumerable<TQuestDescriptor> Complated { get; }
 
-        IEnumerable<IQuest> Progressing { get; }
-
-        bool Accept(IQuest quest);
-	}
+        void Perform(TQuest quest);
+    }
 }
