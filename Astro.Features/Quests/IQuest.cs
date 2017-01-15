@@ -1,5 +1,4 @@
-﻿using Astro.Features.Services;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Astro.Features.Quests
@@ -10,7 +9,6 @@ namespace Astro.Features.Quests
 
         IRewardDescriptor RewardDescription { get; }
         IEnumerable<IRequirement> Requirements { get; }
-
-        IRewardProvider GetRewardProvider();
+        IRewardProvider RewardProvider { get; }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IRewardProvider
     {
-        bool TryProvide();
+        bool TryProvide(IQuestPerformer performer);
     }
 }
