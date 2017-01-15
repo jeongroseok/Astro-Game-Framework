@@ -1,4 +1,4 @@
-﻿using Astro.Features.Services;
+﻿using Astro.Services;
 
 namespace Astro.Features.Economic
 {

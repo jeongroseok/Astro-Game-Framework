@@ -1,4 +1,4 @@
-﻿using Astro.Features.Services;
+﻿using Astro.Services;
 using System.Collections.Generic;
 
 namespace Astro.Features.Economic.Shops
