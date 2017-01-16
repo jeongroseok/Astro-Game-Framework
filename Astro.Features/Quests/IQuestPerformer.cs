@@ -3,11 +3,11 @@
 namespace Astro.Features.Quests
 {
     public interface IQuestPerformer<TQuest, TQuestDescriptor>
-        where TQuest : IQuest
+        where TQuest : IQuest<TQuestDescriptor>
         where TQuestDescriptor : IQuestDescriptor
     {
-        IEnumerable<TQuestDescriptor> InProgress { get; }
-        IEnumerable<TQuestDescriptor> Complated { get; }
+        IEnumerable<TQuest> InProgress { get; }
+        IEnumerable<TQuest> Complated { get; }
 
         void Perform(TQuest quest);
     }

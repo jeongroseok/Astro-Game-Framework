@@ -61,8 +61,6 @@
     <Compile Include="Quests\IQuestProvider.cs" />
     <Compile Include="Quests\IQuestPerformer.cs" />
     <Compile Include="Quests\IQuest.cs" />
-    <Compile Include="Statistic\IAnalyzer.cs" />
-    <Compile Include="Statistic\IStatistic.cs" />
     <Compile Include="Worlds\Arena\IArena.cs" />
   </ItemGroup>
   <ItemGroup>

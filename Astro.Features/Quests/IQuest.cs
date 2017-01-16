@@ -1,13 +1,10 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel;
-
-namespace Astro.Features.Quests
+﻿namespace Astro.Features.Quests
 {
-    public interface IQuest : INotifyPropertyChanged
+    public interface IQuest<TQuestDescriptor>
     {
-        IEnumerable<IQuestObjective> Objectives { get; }
+        TQuestDescriptor Descriptor { get; }
         bool CanProvide { get; }
 
-        bool ProvideReward();
+        bool TryProvideReward();
     }
 }

@@ -3,7 +3,7 @@
 namespace Astro.Features.Quests
 {
     public interface IQuestProvider<TQuest, TQuestDescriptor>
-        where TQuest : IQuest
+        where TQuest : IQuest<TQuestDescriptor>
         where TQuestDescriptor : IQuestDescriptor
     {
         IEnumerable<TQuestDescriptor> Descriptors { get; }
