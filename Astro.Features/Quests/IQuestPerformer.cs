@@ -6,8 +6,7 @@ namespace Astro.Features.Quests
         where TQuest : IQuest<TQuestDescriptor>
         where TQuestDescriptor : IQuestDescriptor
     {
-        IEnumerable<TQuest> InProgress { get; }
-        IEnumerable<TQuest> Complated { get; }
+        IEnumerable<TQuest> Quests { get; }
 
         void Perform(TQuest quest);
     }

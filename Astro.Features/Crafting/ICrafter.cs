@@ -4,6 +4,6 @@ namespace Astro.Features.Crafting
 {
     public interface ICrafter
     {
-        IEnumerable<ICraftingResult> Craft(ICraftingMethod method);
+        IEnumerable<TResult> Craft(IRecipe recipe);
     }
 }

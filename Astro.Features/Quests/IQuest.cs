@@ -1,10 +1,12 @@
-﻿namespace Astro.Features.Quests
+﻿using System;
+
+namespace Astro.Features.Quests
 {
     public interface IQuest<TQuestDescriptor>
     {
-        TQuestDescriptor Descriptor { get; }
-        bool CanProvide { get; }
+        event EventHandler Completed;
 
-        bool TryProvideReward();
+        TQuestDescriptor Descriptor { get; }
+        bool IsComplete { get; }
     }
 }
